@@ -12,7 +12,7 @@ public class LineComparison {
         System.out.println("Enter the values of co-ordinates x2 and y2 for line "+LineNo+": ");
         int x2= in.nextInt();
         int y2= in.nextInt();
-        double length= Math.sqrt((x2-x1)^2 + (y2-y1)^2);
+        double length= Math.sqrt(Math.pow((x2-x1),2.0) + Math.pow((y2-y1),2.0));
         System.out.println("The length of Line "+LineNo+" is: "+length);
         System.out.println("_____________________________________________________________");
         return length;
